@@ -1,0 +1,537 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    background: #f9f9f9;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+@media (max-width: 768px) {
+    .header_top {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header_left {
+        flex-direction: column;
+    }
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}            
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+
+
+             /* desi glrocery logo*/
+.header_left {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    color: #010101;
+    font-size: 30px;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+
+        /*Home Shop Collection Blog LocalStores Contact style start*/
+
+
+.header_right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+ header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li a{
+    font-size:larger;
+    font-family: sans-serif;
+    text-decoration:none;
+    color: #000000;
+    display: block;
+    padding: 5px 10px;
+    justify-content:space-between;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #060606;
+    font-size: larger;
+    border: 0px solid #000000;  
+    border-radius: 13px; 
+    transition: transform 0.3s ease-in-out;
+}
+header nav ul li a:hover {
+    transform: scale(1.1);
+    color: #fcfcfc;
+    font-weight:500;
+    background-color: #1ad637;
+}
+      /*Home Shop Collection Blog LocalStores Contact ar style end*/
+  
+
+
+
+
+             /* header search box start*/
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid #19e141;
+    border-radius: 6px;
+    overflow: hidden;
+    
+    
+}
+.search-box input[type="search"] {
+    border: none;
+    border-radius: 0;
+    padding: 8px 12px;
+    outline: none;
+}
+.search-box .Search {
+    border: none;
+    border-radius: 0;
+    padding: 8px 14px;
+    background: #19e141;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+    
+}
+.search-box .Search:hover {
+    background: #0da915;
+}                          
+  /* header search box end*/
+
+       /*sign up buton style start */
+.sign_in_up_button {
+    text-decoration: none;
+    color: #f6f3f3;
+    border: 0.1px solid rgb(13, 169, 83);
+    border-radius: 3px;
+    background-color: #0da915;
+    padding: 8px;
+    font-weight: 600;
+    transition: transform 0.3s ease;  
+}
+.sign_in_up_button:hover{
+    transform:scale(1.1);
+}
+ /*  sign  up button style  end*/
+
+
+      /* sign in  button style start */
+.sign_in_button{
+    text-decoration: none;
+    color: #2fca2f;
+    border: 1.8px solid rgb(21, 188, 46);
+    border-radius: 3px;
+    background: #f6f2f2;
+    padding: 8px;
+    font-weight: 1000;
+}
+.sign_in_button:hover{
+    background-color: #baeaca;
+}
+
+    /* sign in up button style end */
+
+
+
+                          /* Welcome to DESI GROCERY style start*/
+
+.content_title{
+    font-weight: 500;
+    text-align: center;
+}
+.Displsy_content {
+    background: #161616;
+    background-image: url('../image/nature_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+}
+.Displsy_content_overlay {
+    background-color: rgba(13, 13, 14, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3px;
+}
+.content_title.content_title {
+    color: #ffffff;
+    font-size: 49px;
+    margin:10px;
+}
+.content_subtitle {
+    color: #fcfcfc;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-style: italic;
+}
+/* Welcome to DESI GROCERY style end*/
+ 
+
+       /* food catagory item start */
+
+/* food catagory heading */
+.healthy_food h2{
+    text-align: center;
+    margin-bottom: 60px;
+    font-size:xx-large;
+    margin-top: 2px;
+}
+
+.healthy_food{
+    padding: 20px;
+    border: 1.4px solid #c3bdbd;
+    border-radius:9px;
+    width:100%;
+    height: auto; 
+    box-shadow: 2px 2px 10px #d5cece;
+    margin: 2px;
+    cursor: pointer;
+    margin-top: 80px;
+}
+.healthy_food ul {
+    display: flex;
+    list-style: none;
+    gap: 33px;
+    flex-wrap: wrap;
+}
+.healthy_food li {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    list-style: none;
+    box-shadow: 0px 0px 3px #928e8e;
+    flex: 1;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.healthy_food li:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 8px 20px rgba(0,0,0,0.2);
+}
+
+           /* all catagory ar Item Name */
+
+.healthy_food li p{
+    color: #030303;
+    font-weight:500 ;
+    font-size:large;
+    text-shadow:0px 0px 0.4px ;  
+}
+
+/* all catagory ar image */
+.healthy_food img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;          
+}
+
+
+
+
+
+         /*  View Details style start*/
+.healthy_food a {
+    display:inline-block;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.healthy_food a:hover{
+    color: #0735ec;
+}
+/*  View Details edit end */
+
+
+
+          /*  Add to card style start */
+             
+.add_cart {
+    background: transparent;
+    border: 2px solid #20e029;
+    color: #0fe950;
+    padding: 7px;
+    font-weight: 700;  
+}
+.healthy_food a.add_cart {
+    border-radius: 8px;
+}
+
+.healthy_food a.add_cart:hover{
+    background-color: #0fdb50;
+    box-shadow: 1px 2px 4px rgb(6, 101, 11);
+    color: #ffffff;
+} 
+/*  Add to card edit end */
+
+/* Add to Cart Page style start */
+.Add_cart {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.Add_cart .heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Add_cart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.Add_cart th,
+.Add_cart td {
+    border: 1px solid #e0e0e0;
+    padding: 2px;
+    text-align: center;
+}
+
+.table_heading {
+    background: #0da92c;
+    color: white;
+}
+
+.Add_cart td img {
+    width: auto;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+.total_price {
+    text-align: right;
+    font-size: 18px;
+    margin-top: 15px;
+    
+}
+
+.Add_cart > a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #0b9e06;
+    text-decoration: none;
+    font-weight: 600;
+    
+    
+}
+
+.Add_cart > a:hover {
+    text-decoration: none;
+    color: #031cd6;
+    border: 2px solid #3f983f;
+    background-color: #c8ecd3;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+                        /* Add to Cart Page style end */
+
+
+             /*  price and Star rating edit start */
+.old-price {
+    color: #9a9595;
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-left: -1px;
+}
+.price_rating{
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding :9px;
+}
+.price_rating .rating{
+    background: origin 1px;
+    padding: 2px ;
+    font-size: 13px;
+    justify-content:end;
+    display: flex;
+    margin-top: 3px;
+}
+/* price and Star rating edit end */
+
+                 /* (food catagory item end )*/
+
+
+
+
+                 /* (SIGN In) AND (SIGN UP) Page style Start*/
+.Login_form {
+    width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #928e8e;
+    text-align: center;
+    min-width: 100px;
+}
+.Login_form h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.Login_form form {
+    display: flex;
+    flex-direction: column;
+}
+.Login_form label {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom:10px;
+    font-weight: 600;
+}
+.Login_form input {
+    padding: 10px;
+    border: 1.8px solid #020202;
+    border-radius: 6px;
+    box-shadow: 5px 4px 8px #d1cccc;
+    font-size: 13px;
+    transition: transform 0.2s ease;
+}
+.Login_form input:hover{
+    transform: scale(1);
+}
+.Login_form button {
+    margin-top: 20px;
+    padding: 10px;
+    background: #11b219;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 2px 1px 8px #928e8e;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.Login_form button:hover {
+    transform: scale(1.1);
+}
+/* (SIGN IN) AND (SIGN UP) page style end*/
+
+
+                             /* FOOTER*/
+footer {
+    background:#0F172A;
+    color: #ffffff;
+    margin-top: 40px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-about h3,  .footer-links h4,  .footer-contact h4 {
+    color: #fbfafa;
+    margin-bottom: 15px;
+    font-weight: 1000;
+}
+.footer-about p, .footer-contact p {
+    line-height: 1.6;
+}
+.footer-links ul {
+    list-style: none;
+}
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+.footer-links ul li a {
+    color: #dfd7d7;
+    text-decoration: none;
+}
+.footer-links ul li a:hover {
+    color: #0a07df;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+}                 
+.footer_social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+.footer_social img {
+    width: 50px;
+    height: 32px;
+    object-fit: contain;
+    border: 1px solid rgba(0, 0, 0, 0.635);
+    border-radius: 12px;
+}
+.footer_social a {
+    transition: transform 0.2s ease;
+}
+.footer_social a:hover {
+    transform: scale(1.1);
+}
+/* RESPONSIVE - Mobile & Tablet */
+@media (max-width: 600px) {
+    .healthy_food li {
+        flex: 1 1 100%;
+    }
+    .content_title.content_title {
+        font-size: 28px;
+    }
+    .content_subtitle {
+        font-size: 14px;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .healthy_food li {
+        flex: 1 1 45%;
+    }
+}
+/* RESPONSIVE END */
+/* FOOTER END */
