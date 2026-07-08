@@ -25,7 +25,9 @@ header {
         flex-wrap: wrap;
         justify-content: center;
     }
-}            
+}  
+
+
 .header_top {
     display: flex;
     justify-content: space-between;
@@ -35,8 +37,8 @@ header {
 }
 
 
+ /* desi glrocery logo*/
 
-             /* desi glrocery logo*/
 .header_left {
     display: flex;
     align-items: center;
@@ -49,7 +51,7 @@ header {
 }
 
 
-        /*Home Shop Collection Blog LocalStores Contact style start*/
+  /*Home Shop Collection Blog LocalStores Contact style start*/
 
 
 .header_right{
@@ -97,19 +99,15 @@ header nav ul li a:hover {
       /*Home Shop Collection Blog LocalStores Contact ar style end*/
   
 
-
-
-
-             /* header search box start*/
+/* header search box start*/
 .search-box {
     display: flex;
     align-items: center;
     border: 2px solid #19e141;
     border-radius: 6px;
     overflow: hidden;
-    
-    
 }
+
 .search-box input[type="search"] {
     border: none;
     border-radius: 0;
@@ -166,7 +164,7 @@ header nav ul li a:hover {
 
 
 
-                          /* Welcome to DESI GROCERY style start*/
+  /* Welcome to DESI GROCERY style start*/
 
 .content_title{
     font-weight: 500;
@@ -206,7 +204,7 @@ header nav ul li a:hover {
 /* Welcome to DESI GROCERY style end*/
  
 
-       /* food catagory item start */
+ /* food catagory item start */
 
 /* food catagory heading */
 .healthy_food h2{
@@ -248,7 +246,7 @@ header nav ul li a:hover {
     box-shadow: 4px 8px 20px rgba(0,0,0,0.2);
 }
 
-           /* all catagory ar Item Name */
+ /* all catagory ar Item Name */
 
 .healthy_food li p{
     color: #030303;
@@ -265,10 +263,7 @@ header nav ul li a:hover {
 }
 
 
-
-
-
-         /*  View Details style start*/
+ /*  View Details style start*/
 .healthy_food a {
     display:inline-block;
     color: #000000;
@@ -282,7 +277,7 @@ header nav ul li a:hover {
 
 
 
-          /*  Add to card style start */
+ /*  Add to card style start */
              
 .add_cart {
     background: transparent;
@@ -352,9 +347,7 @@ header nav ul li a:hover {
     margin-top: 20px;
     color: #0b9e06;
     text-decoration: none;
-    font-weight: 600;
-    
-    
+    font-weight: 600;  
 }
 
 .Add_cart > a:hover {
@@ -366,10 +359,10 @@ header nav ul li a:hover {
     padding: 3px;
 }
 
-                        /* Add to Cart Page style end */
+    /* Add to Cart Page style end */
 
+    /*  price and Star rating edit start */
 
-             /*  price and Star rating edit start */
 .old-price {
     color: #9a9595;
     text-decoration: line-through;
@@ -392,12 +385,10 @@ header nav ul li a:hover {
 }
 /* price and Star rating edit end */
 
-                 /* (food catagory item end )*/
+ /* (food catagory item end )*/
 
+/* (SIGN In) AND (SIGN UP) Page style Start*/
 
-
-
-                 /* (SIGN In) AND (SIGN UP) Page style Start*/
 .Login_form {
     width: 500px;
     margin: 50px auto;
@@ -451,7 +442,8 @@ header nav ul li a:hover {
 /* (SIGN IN) AND (SIGN UP) page style end*/
 
 
-                             /* FOOTER*/
+  /* FOOTER*/
+
 footer {
     background:#0F172A;
     color: #ffffff;
@@ -512,6 +504,7 @@ footer {
     transform: scale(1.1);
 }
 /* RESPONSIVE - Mobile & Tablet */
+
 @media (max-width: 600px) {
     .healthy_food li {
         flex: 1 1 100%;
