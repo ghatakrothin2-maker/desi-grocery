@@ -226,10 +226,12 @@ header nav ul li a:hover {
     margin-top: 80px;
 }
 .healthy_food ul {
-    display: flex;
+    display:flex;
     list-style: none;
     gap: 33px;
     flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
 }
 .healthy_food li {
     border: 1px solid #e0e0e0;
@@ -238,12 +240,28 @@ header nav ul li a:hover {
     text-align: center;
     list-style: none;
     box-shadow: 0px 0px 3px #928e8e;
-    flex: 1;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
 }
 .healthy_food li:hover{
     transform: scale(1.1);
     box-shadow: 4px 8px 20px rgba(0,0,0,0.2);
+}
+/* DISCOUNT_BADGE STYLE*/
+.discount_badge {
+    position: absolute;
+    top: 8px;
+    right: 3px;
+    background: red;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-style: italic;
+    
+}
+.discount_badge:hover{
+    background-color: rgb(150, 18, 18);
+    font-weight: 900;
 }
 
  /* all catagory ar Item Name */
@@ -261,6 +279,7 @@ header nav ul li a:hover {
     width: 150px;
     object-fit: cover;          
 }
+
 
 
  /*  View Details style start*/
@@ -288,6 +307,7 @@ header nav ul li a:hover {
 }
 .healthy_food a.add_cart {
     border-radius: 8px;
+    font-weight:900;
 }
 
 .healthy_food a.add_cart:hover{

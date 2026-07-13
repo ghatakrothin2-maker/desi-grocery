@@ -177,14 +177,23 @@
     top:10px;
     z-index: 100;
 }
+
 .navbar ul{
     display: flex;
     gap: 15px;
     list-style: none;
     width:100%;
-    justify-content: center;
-
-    
+    justify-content: center;    
+}
+@media(max-width:700px){
+    .navbar ul{
+        display:none;
+    }
+    .navbar{
+        display:inline-block;
+        width: 100%;
+        margin: 0px;
+    }
 }
 .navbar ul li a{
     text-decoration: none;
@@ -209,17 +218,40 @@
 }
 
 .products ul{
-    display: flex;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     justify-content: center;
     list-style: none;
+    gap:25px;
+    
+    
+    
+    
 }
 
 .products li {
     text-align: center;
-    border: 0px solid rgb(126, 123, 123);
+    border: 1px solid rgb(126, 123, 123);
+    margin: 0px;
+    border-radius: 6px;
+    position: relative;
  
 }
+.discount_badge {
+    position:absolute;
+    top: 8px;
+    right: 3px;
+    background-color: #ff0000;
+    color: rgb(253, 253, 253);
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-style: italic;
+}
+.discount_badge:hover{
+    color: #ffffff;
+    font-weight: 900;
 
+}
 .products li:hover{
     box-shadow: 1px 2px 9px rgb(50, 49, 49);
 }
@@ -232,7 +264,7 @@
 }
 
 .products img:hover{
-    border: 1px solid #d4cdcd;
+    border: 0px solid #d4cdcd;
     margin: 2px;
     border-radius: 4px;
     cursor: pointer;
@@ -281,7 +313,7 @@
 
 .products .Add_to_cart{
     text-decoration: none;
-    border: 1px solid rgb(18, 199, 45);
+    border: 2px solid rgb(18, 199, 45);
     padding: 7px;
     margin: 1%;
     color: #050505;
@@ -303,6 +335,7 @@
     color: #050505;
     background-color: rgb(250, 248, 248);
     border-radius: 3px;
+    margin-bottom: 10px;
 }
 
 .products .View_Details:hover{
@@ -310,4 +343,68 @@
     color: #0416dd;
     font-weight: 800;
     text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+.menu_wrapper {
+    position: relative;
+}
+
+.menu_checkbox {
+    display: none;
+}
+
+.menu_dots {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: -50px;
+    margin-bottom: -100px;
+}
+.menu_dots::after {
+    content: "⋮";
+    font-size: 30px;
+}
+.menu_dots:hover {
+    background-color: rgba(0,0,0,0.08);
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 44px;
+    left :1px;
+    background: white;
+    border: 1px solid #363535;
+    border-radius: 8px;
+    min-width: 140px;
+    padding: 4px;
+    max-width: 90vw;
+    box-sizing: border-box;
+}
+
+.dropdown_menu a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+}
+.dropdown_menu a:hover {
+    background: #f0f0f0;
+}
+
+.menu_checkbox:checked ~ .dropdown_menu {
+    display: block;
 }
