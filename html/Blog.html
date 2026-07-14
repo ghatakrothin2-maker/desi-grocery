@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/rasponsiv.js" defer></script>
 </head>
 <body>
     <header >   
@@ -12,19 +13,20 @@
             <div class="header_left">
                 <a href="copy.html" class="logo">Desi Grocery</a>
             </div>
-        
+            <button class="menu_toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            
             <div class="header_search">
                 <div class="search-box">
                     <input type="search" placeholder="Search products...">
                     <button type="submit" class="Search">Search</button>
                 </div>
             </div>
-        
             <div class="header_right">
                 <a href="login.html" class="sign_in_button">Sign in</a>
                 <a href="sign_up.html" class="sign_in_up_button">Sign up</a>
             </div>
         </div>
+    </header>
     <nav class="navbar">
         <ul>
             <li><a href="copy.html">Home</a></li>
@@ -34,9 +36,13 @@
             <li><a href="Local_stores.html">Local Stores</a></li>
             <li><a href="Contact.html">Contact</a></li>
         </ul>
+        <div class="navbar_auth">
+            <a href="login.html" class="sign_in_button">Sign in</a>
+            <a href="sign_up.html" class="sign_in_up_button">Sign up</a>
+        </div>
     </nav>
-
-    </header>
+    <div class="nav_overlay" id="navOverlay"></div>
+    
     <div class="Displsy_content">
         <div class="Displsy_content_overlay">
             <h1 class="content_title">Welcome to Our Village Blog </h1>
